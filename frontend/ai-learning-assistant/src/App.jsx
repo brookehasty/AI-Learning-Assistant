@@ -11,6 +11,7 @@ import FlashcardPage from './pages/Flashcards/FlashcardPage';
 import QuizTakePage from './pages/Quizzes/QuizTakePage';
 import QuizResultPage from './pages/Quizzes/QuizResultPage';
 import ProfilePage from './pages/Profile/ProfilePage';
+import ProtectedRoute from './components/auth/ProtectedRoute';
 
 const App = () => {
   const isAuthenticated = false
