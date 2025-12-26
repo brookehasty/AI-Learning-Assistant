@@ -5,7 +5,7 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import errorHandler from '../middleware/errorHandler.js'
+import errorHandler from './middleware/errorHandler.js'
 
 // ES6 module __dirname alternative
 const __filename = fileURLToPath(import.meta.url);
@@ -53,6 +53,6 @@ app.listen(PORT, () => {
 });
 
 process.on('unhandledRejection', (err) => {
-    console.error(`Error: ${err.messsage}`);
+    console.error(`Error: ${err.message}`);
     process.exit(1);
 });
