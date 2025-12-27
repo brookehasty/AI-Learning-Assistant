@@ -1,4 +1,4 @@
-import exoress from 'express';
+import express from 'express';
 import { body } from 'express-validator';
 import {
     register,
